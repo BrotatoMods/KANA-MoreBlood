@@ -10,7 +10,7 @@ var translations_dir_path := ""
 
 # blood_color #9f2727
 
-func _init(modloader = ModLoader) -> void:
+func _init() -> void:
 	mod_dir_path = ModLoaderMod.get_unpacked_dir().plus_file(KANA_MOREBLOOD_DIR)
 	# Add extensions
 	install_script_extensions()

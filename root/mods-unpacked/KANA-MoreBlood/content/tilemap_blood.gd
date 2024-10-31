@@ -28,7 +28,7 @@ func _on_enemy_spawned(enemy: Enemy) -> void:
 	enemy.connect("died", self, "_on_enemy_died")
 
 
-func _on_enemy_died(enemy: Enemy) -> void:
+func _on_enemy_died(enemy: Enemy, args: Enemy.DieArgs) -> void:
 	var local_position = to_local(enemy.global_position)
 	var map_position = world_to_map(local_position)
 
